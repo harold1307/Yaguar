@@ -197,6 +197,35 @@ header .header-imagen-hidden_movil {
   font-size: 46px;
   text-align: center;
 }
+.carousel {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.slick-slide {
+  margin: 10px;
+}
+
+.slick-slide img {
+  width: 80%;
+  padding: 0 10px;
+}
+
+@media (max-width: 991px) {
+  .slick-slide img {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 991px) {
   .elegirnos .subtitle {
     font-size: 30px;

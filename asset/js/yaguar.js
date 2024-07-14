@@ -1,12 +1,12 @@
 $(document).ready(function () {
      $(".carousel").slick({
           infinite: true,
-          slidesToShow: 6,
+          slidesToShow: 7,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 2000,
           centerMode: true,
-          centerPadding: "30px",
+          centerPadding: "20px",  
           arrows: true,
           responsive: [
                {
@@ -23,7 +23,7 @@ $(document).ready(function () {
                     settings: {
                          arrows: false,
                          centerMode: true,
-                         centerPadding: "40px",
+                         centerPadding: "20px",
                          slidesToShow: 4,
                     },
                },
@@ -32,7 +32,7 @@ $(document).ready(function () {
                     settings: {
                          arrows: false,
                          centerMode: true,
-                         centerPadding: "0px",
+                         centerPadding: "10px",
                          slidesToShow: 3,
                     },
                },
@@ -41,7 +41,7 @@ $(document).ready(function () {
                     settings: {
                          arrows: false,
                          centerMode: true,
-                         centerPadding: "0px",
+                         centerPadding: "10px",
                          slidesToShow: 2,
                     },
                },
@@ -49,21 +49,20 @@ $(document).ready(function () {
      });
 });
 
-
 //Botones
 
-$(function() {  
-     $('.btn-6')
-       .on('mouseenter', function(e) {
-         var parentOffset = $(this).offset(),
-             relX = e.pageX - parentOffset.left,
-             relY = e.pageY - parentOffset.top;
-         $(this).find('span').css({top:relY, left:relX})
-       })
-       .on('mouseout', function(e) {
-         var parentOffset = $(this).offset(),
-             relX = e.pageX - parentOffset.left,
-             relY = e.pageY - parentOffset.top;
-         $(this).find('span').css({top:relY, left:relX})
-       });
-   });
+$(function () {
+     $(".btn-6")
+          .on("mouseenter", function (e) {
+               var parentOffset = $(this).offset(),
+                    relX = e.pageX - parentOffset.left,
+                    relY = e.pageY - parentOffset.top;
+               $(this).find("span").css({ top: relY, left: relX });
+          })
+          .on("mouseout", function (e) {
+               var parentOffset = $(this).offset(),
+                    relX = e.pageX - parentOffset.left,
+                    relY = e.pageY - parentOffset.top;
+               $(this).find("span").css({ top: relY, left: relX });
+          });
+});
