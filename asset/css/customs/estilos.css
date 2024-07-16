@@ -673,6 +673,54 @@ header .header-imagen-hidden_movil {
   justify-self: end;
   border-radius: 0 10px 10px 0;
 }
+.container-empezar_img_pc {
+  grid-area: 1/1/4/5;
+  height: 100%;
+  display: block;
+}
+@media (max-width: 991px) {
+  .container-empezar_img_pc {
+    display: none;
+  }
+}
+.container-empezar_img_movil {
+  grid-area: 1/1/4/5;
+  justify-self: end;
+  height: 100%;
+  z-index: 0;
+  border-radius: 0 10px 10px 0;
+  display: none;
+}
+@media (max-width: 991px) {
+  .container-empezar_img_movil {
+    display: block;
+    width: 100%;
+    height: auto;
+    -ms-flex-item-align: end;
+        align-self: end;
+    justify-self: stretch;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-empezar_img_movil {
+    display: block;
+    width: 100%;
+    height: auto;
+    -ms-flex-item-align: end;
+        align-self: end;
+    justify-self: stretch;
+  }
+}
+@media (max-width: 992px) and (max-width: 1199px) {
+  .container-empezar_img_movil {
+    display: block;
+    width: 100%;
+    height: auto;
+    -ms-flex-item-align: end;
+        align-self: end;
+    justify-self: stretch;
+  }
+}
 .container-empezar_overlay {
   z-index: 1;
   grid-area: 1/1/4/4;
