@@ -14148,6 +14148,7 @@ header .header-imagen-hidden_movil {
   grid-area: 1/1/4/5;
   height: 100%;
   display: block;
+  justify-self: end;
 }
 @media (max-width: 991px) {
   .container-empezar_img_pc {
@@ -14194,9 +14195,16 @@ header .header-imagen-hidden_movil {
 }
 .container-empezar_overlay {
   z-index: 1;
-  grid-area: 1/1/4/5;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(255, 255, 255, 0.84)), color-stop(34%, rgba(255, 255, 255, 0.0392156863)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84) 5%, rgba(255, 255, 255, 0.0392156863) 34%, rgba(255, 255, 255, 0));
+  grid-area: 1/1/4/4;
+  background: -webkit-gradient(linear, left top, right top, color-stop(45%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, white 45%, rgba(255, 255, 255, 0));
+}
+@media (max-width: 991px) {
+  .container-empezar_overlay {
+    grid-area: 1/1/4/5;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(255, 255, 255, 0.84)), color-stop(34%, rgba(255, 255, 255, 0.0392156863)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.84) 5%, rgba(255, 255, 255, 0.0392156863) 34%, rgba(255, 255, 255, 0));
+  }
 }
 
 footer {
