@@ -652,6 +652,7 @@ header .header-imagen-hidden_movil {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
   border-radius: 10px;
+  overflow: hidden;
 }
 .container-empezar_cta {
   grid-area: 2/1/3/3;
@@ -666,6 +667,45 @@ header .header-imagen-hidden_movil {
   font-weight: bold;
   line-height: 70px;
   margin-bottom: 34px;
+}
+@media (max-width: 991px) {
+  .container-empezar_logo {
+    height: 34px;
+    left: 50%;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .container-empezar_description {
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 55px;
+    margin-bottom: 34px;
+    text-align: center;
+    width: 70%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .container-empezar_cta {
+    grid-area: 1/1/4/5;
+    z-index: 2;
+    position: relative;
+    margin-left: unset;
+  }
+  .container-empezar_cta .btn_naranja {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 .container-empezar_img {
   z-index: 0;
@@ -723,9 +763,9 @@ header .header-imagen-hidden_movil {
 }
 .container-empezar_overlay {
   z-index: 1;
-  grid-area: 1/1/4/4;
-  background: -webkit-gradient(linear, left top, right top, color-stop(45%, white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(90deg, white 45%, rgba(255, 255, 255, 0));
+  grid-area: 1/1/4/5;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(255, 255, 255, 0.84)), color-stop(34%, rgba(255, 255, 255, 0.0392156863)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84) 5%, rgba(255, 255, 255, 0.0392156863) 34%, rgba(255, 255, 255, 0));
 }
 
 footer {
