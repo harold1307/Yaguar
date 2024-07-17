@@ -65,7 +65,7 @@ $(document).ready(function () {
                     settings: {
                          arrows: false,
                          centerMode: true,
-                         centerPadding: "30px",
+                         centerPadding: "0px",
                          slidesToShow: 3,
                     },
                },
@@ -74,8 +74,8 @@ $(document).ready(function () {
                     settings: {
                          arrows: false,
                          centerMode: true,
-                         centerPadding: "20px",
-                         slidesToShow: 3,
+                         centerPadding: "0px",
+                         slidesToShow: 2,
                     },
                },
                {

@@ -49,12 +49,24 @@ li,
   color: white;
 }
 
+.btn-planes {
+  border: 1px solid #ff4419;
+  background-color: white;
+  border-radius: 6px;
+  color: #ff4419;
+  font-size: 14px;
+}
+
 .btn_whatsapp {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #60D66A), to(#20B038));
   background: linear-gradient(180deg, #60D66A 42%, #20B038 100%);
   color: white;
   padding: 10px 20px;
   border-radius: 6px;
+}
+
+.espacio-1 {
+  height: 30px;
 }
 
 .menu-top {
@@ -197,7 +209,8 @@ header .header-imagen-hidden_movil {
   font-size: 46px;
   text-align: center;
 }
-.carousel, .carousel-testimonios {
+.carousel,
+.carousel-testimonios {
   width: 100%;
   margin: 0px auto;
 }
@@ -645,6 +658,109 @@ header .header-imagen-hidden_movil {
   .container-beneficio-dos .right {
     grid-area: 1/1/2/5;
   }
+}
+
+.testimonios .card.slick-slide {
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 3px 8px 15px -2px rgba(0, 0, 0, 0.0588235294);
+          box-shadow: 3px 8px 15px -2px rgba(0, 0, 0, 0.0588235294);
+  margin: 30px;
+}
+.testimonios .card-body {
+  padding: 30px;
+  text-align: justify;
+}
+.testimonios .card-text {
+  padding: 30px 0px;
+}
+.testimonios .card-footer_cliente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonios .card-footer_cliente .card-cliente {
+  margin: 0 15px;
+}
+.testimonios .card-footer_cliente .card-avatar {
+  height: 55px;
+  width: auto;
+  border-radius: 6px;
+}
+.testimonios .card-footer_cliente .card-avatar img {
+  width: 100%;
+  padding: 0px;
+}
+.testimonios .card-footer_cliente .card-nombre {
+  font-size: 20px;
+}
+.testimonios .card-footer_cliente .card-profesion {
+  color: #ff4419;
+  font-size: 16px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonios .card.slick-slide {
+    margin: 10px;
+  }
+}
+
+.planes .separador {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.planes .row {
+  border-radius: 10px;
+}
+.planes .plan li {
+  font-weight: 400;
+  margin-bottom: 12px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.planes .plan li.check {
+  list-style-image: url(/asset/imagenes/icons/mdi_check-bold.png);
+}
+.planes .plan li.uncheck {
+  list-style-image: url(/asset/imagenes/icons/uncheck-bold.png);
+}
+.planes .plan-titulo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 36px;
+}
+.planes .plan-precios {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.planes .plan-footer {
+  text-align: center;
+}
+.planes .plan-footer .oferta {
+  text-align: center;
+}
+.planes .plan-footer .normal {
+  text-align: center;
 }
 
 .container-empezar {
