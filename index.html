@@ -4,9 +4,16 @@
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Yaguar</title>
-          <meta name="description" content="Agenda Yaguar">    
-          <meta name="robots" content="index, follow">    
+          <meta name="description" content="Agenda Yaguar" />
+          <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://yaguar.vercel.app/" />
+
+          <link rel="preload" as="image" href="./asset/imagenes/Logo.svg" />
+          <link
+               rel="preload"
+               as="image"
+               href="./asset/imagenes/chica-recibiendo-una-recordatorio-en-su-telefono-de-la-agenda-yaguar.webp"
+          />
           <link
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
@@ -14,10 +21,8 @@
           <link
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-               
           />
           <link href="/asset/css/yaguar.min.css" rel="stylesheet" />
-          
      </head>
      <body>
           <main>
@@ -84,7 +89,7 @@
                                    </h1>
                                    <img
                                         class="header-imagen header-imagen-hidden_pc p-1 mb-4"
-                                        src="./asset/imagenes/chica-recibiendo-una-recordatorio-en-su-telefono-de-la-agenda-yaguar.svg"
+                                        src="./asset/imagenes/chica-recibiendo-una-recordatorio-en-su-telefono-de-la-agenda-yaguar.webp"
                                         alt="Chica recibiendo una recordatorio en su telefono de la agenda Yaguar"
                                    />
                                    <p class="header-descripcion pb-4">
@@ -170,7 +175,10 @@
                                    <h2 class="subtitle">
                                         ¿Por qué elegir
                                         <span
-                                             ><img class="logotipo" src="/asset/imagenes/Logo.svg" alt="Logo Yahuar"
+                                             ><img
+                                                  class="logotipo"
+                                                  src="/asset/imagenes/Logo.svg"
+                                                  alt="Logo Yahuar"
                                         /></span>
                                         ?
                                    </h2>
@@ -203,12 +211,12 @@
                               </div>
                               <img
                                    class="img-fondo_pc"
-                                   src="/asset/imagenes/Chica-celular.png"
+                                   src="/asset/imagenes/Chica-celular.webp"
                                    alt="fondo"
                               />
                               <img
                                    class="img-fondo_movil"
-                                   src="/asset/imagenes/img_chica.png"
+                                   src="/asset/imagenes/img_chica.webp"
                                    alt="fondo"
                               />
                          </div>
@@ -216,12 +224,12 @@
                               <div class="left">
                                    <img
                                         class="img_recordatorio"
-                                        src="/asset/imagenes/paso-1-calendario.png"
+                                        src="/asset/imagenes/paso-1-calendario.webp"
                                         alt="Paso 1 calendario"
                                    />
                                    <img
                                         class="img_reservado"
-                                        src="/asset/imagenes/paso-2-seleccion-turno.png"
+                                        src="/asset/imagenes/paso-2-seleccion-turno.webp"
                                         alt="Mensaje de Turno Reservado"
                                    />
                               </div>
@@ -585,6 +593,6 @@
                crossorigin="anonymous"
           ></script>
 
-          <script async src="./asset/js/yaguar.js"></script>
+          <script defer src="./asset/js/yaguar.js"></script>
      </body>
 </html>
