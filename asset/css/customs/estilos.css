@@ -702,7 +702,7 @@ header .header-imagen-hidden_movil {
 .testimonios {
   padding: 50px 0px 50px 0px;
 }
-.testimonios .card.slick-slide {
+.testimonios .card {
   border: none;
   border-radius: 6px;
   -webkit-box-shadow: 3px 8px 15px -2px rgba(0, 0, 0, 0.0588235294);
@@ -749,7 +749,7 @@ header .header-imagen-hidden_movil {
   font-size: 16px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .testimonios .card.slick-slide {
+  .testimonios .card {
     margin: 10px;
   }
 }
