@@ -13464,6 +13464,11 @@ li,
   font-family: "Gilroy", sans-serif !important;
 }
 
+@media (min-width: 320px) and (max-width: 991px) {
+  .container {
+    max-width: 88%;
+  }
+}
 .btn_naranja {
   background-color: #ff4419;
   color: white;
@@ -13590,6 +13595,48 @@ header .header-imagen-hidden_pc {
 header .header-imagen-hidden_movil {
   display: block;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  header .header-titulo {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 46px;
+    font-family: "Gilroy", sans-serif !important;
+    text-align: center;
+  }
+  header .header-descripcion {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Gilroy", sans-serif;
+    text-align: center;
+  }
+  header .header-btn {
+    width: 100%;
+    font-family: "Gilroy", sans-serif;
+    font-size: 20px;
+  }
+  header .header-imagen {
+    max-width: 90%;
+  }
+  header .header-imagen-hidden_movil {
+    display: none;
+  }
+  header .header-imagen-hidden_pc {
+    display: block;
+    padding: 25px 0;
+  }
+  header .header .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   header .header-titulo {
     font-size: 36px;
@@ -13610,7 +13657,7 @@ header .header-imagen-hidden_movil {
     font-size: 20px;
   }
   header .header-imagen {
-    width: 98%;
+    max-width: 500px;
   }
   header .header-imagen-hidden_movil {
     display: none;
@@ -13638,9 +13685,6 @@ header .header-imagen-hidden_movil {
     width: 100%;
     font-family: "Gilroy", sans-serif;
     font-size: 22px;
-  }
-  header .header-imagen {
-    width: 98%;
   }
   header .header-imagen-hidden_movil {
     display: none;
@@ -13715,6 +13759,10 @@ header .header-imagen-hidden_movil {
   .elegirnos .subtitle .logotipo {
     height: 30px;
   }
+}
+
+.marcas {
+  margin: 70px 0;
 }
 
 .container-beneficio-uno {
@@ -14206,6 +14254,76 @@ header .header-imagen-hidden_movil {
 .pasos-pc-contenido-item .pasos-img {
   max-height: 640px;
   width: auto;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .pasos-pc-menu-title {
+    margin-bottom: 36px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .pasos-pc-menu-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 4px;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+            box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+  }
+  .pasos-pc-menu-btn span {
+    color: #ff7400;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Gilroy", sans-serif;
+  }
+  .pasos-pc-menu-btn.active:nth-child(odd) {
+    -webkit-box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+            box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+    background-color: #ff4419;
+  }
+  .pasos-pc-menu-btn.active:nth-child(odd) span {
+    color: white;
+  }
+  .pasos-pc-menu-btn.active:nth-child(odd) img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .pasos-pc-menu-btn.active:nth-child(even) {
+    -webkit-box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+            box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+    background-color: #ff7400;
+  }
+  .pasos-pc-menu-btn.active:nth-child(even) span {
+    color: white;
+  }
+  .pasos-pc-menu-btn.active:nth-child(even) img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .pasos-pc-contenido {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pasos-pc-contenido-item .pasos-img {
+    max-height: 450px;
+    width: auto;
+  }
 }
 
 .testimonios {
