@@ -27,9 +27,14 @@ li,
   font-family: "Gilroy", sans-serif !important;
 }
 
-@media (min-width: 320px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
-    max-width: 88%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 90%;
   }
 }
 .btn_naranja {
