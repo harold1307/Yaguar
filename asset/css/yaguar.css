@@ -13497,6 +13497,31 @@ li,
   color: white;
 }
 
+.btn_blanco {
+  background-color: white;
+  color: #ff4419;
+  border-color: #ff4419;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+  min-width: 200px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn_blanco {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) and (max-width: 1199px) {
+  .btn_blanco {
+    font-size: 22px;
+  }
+}
+.btn_blanco:hover {
+  background-color: white;
+  color: #ff4419;
+  border-color: white;
+}
+
 .btn-planes {
   border: 1px solid #ff4419;
   background-color: white;
@@ -13527,6 +13552,10 @@ li,
 
 .espacio-1 {
   height: 30px;
+}
+
+.espacio-movil-2 {
+  height: 50px;
 }
 
 .menu-top {
@@ -14400,6 +14429,11 @@ header .header-imagen-hidden_movil {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
 }
 
 .testimonios {

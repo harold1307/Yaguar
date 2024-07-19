@@ -6,9 +6,10 @@
   padding: 10px 0;
   min-width: 200px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 991px) {
   .btn_naranja {
     font-size: 20px;
+    width: 100%;
   }
 }
 @media (max-width: 992px) and (max-width: 1199px) {
@@ -19,6 +20,32 @@
 .btn_naranja:hover {
   background-color: #ff4419;
   color: white;
+}
+
+.btn_blanco {
+  background-color: white;
+  color: #ff4419;
+  border-color: #ff4419;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+  min-width: 200px;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .btn_blanco {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) and (max-width: 1199px) {
+  .btn_blanco {
+    font-size: 22px;
+  }
+}
+.btn_blanco:hover {
+  background-color: white;
+  color: #ff4419;
+  border-color: white;
 }
 
 .btn-planes {
