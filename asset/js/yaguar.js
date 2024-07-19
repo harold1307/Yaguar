@@ -4,10 +4,11 @@ $(document).ready(function () {
           slidesToShow: 7,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
+          speed:3000,
           centerMode: true,
           centerPadding: "20px",  
-          arrows: true,
+          arrows: false,
           responsive: [
                {
                     breakpoint: 1200,
@@ -57,7 +58,7 @@ $(document).ready(function () {
           autoplay: true,
           autoplaySpeed: 2000,
           centerMode: true,
-          centerPadding: "20px",  
+          centerPadding: "30px",  
           arrows: true,
           responsive: [
                {

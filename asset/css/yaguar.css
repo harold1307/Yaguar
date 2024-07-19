@@ -14136,6 +14136,78 @@ header .header-imagen-hidden_movil {
   }
 }
 
+.pasos-pc {
+  margin: 80px 0 0px 0;
+}
+.pasos-pc-menu-title {
+  margin-bottom: 36px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.pasos-pc-menu-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+  border: none;
+  padding: 18px 20px;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+          box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+}
+.pasos-pc-menu-btn span {
+  color: #ff7400;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+}
+.pasos-pc-menu-btn.active:nth-child(odd) {
+  -webkit-box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+          box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+  background-color: #ff4419;
+}
+.pasos-pc-menu-btn.active:nth-child(odd) span {
+  color: white;
+}
+.pasos-pc-menu-btn.active:nth-child(odd) img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+.pasos-pc-menu-btn.active:nth-child(even) {
+  -webkit-box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+          box-shadow: 2px 2px 14px -10px rgba(0, 0, 0, 0.3882352941);
+  background-color: #ff7400;
+}
+.pasos-pc-menu-btn.active:nth-child(even) span {
+  color: white;
+}
+.pasos-pc-menu-btn.active:nth-child(even) img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+.pasos-pc-contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pasos-pc-contenido-item .pasos-img {
+  max-height: 640px;
+  width: auto;
+}
+
 .testimonios {
   padding: 50px 0px 50px 0px;
 }
@@ -14145,7 +14217,7 @@ header .header-imagen-hidden_movil {
   -webkit-box-shadow: 3px 8px 15px -2px rgba(0, 0, 0, 0.0588235294);
           box-shadow: 3px 8px 15px -2px rgba(0, 0, 0, 0.0588235294);
   margin: 30px;
-  background: #fefefe;
+  background: #f8f9fa;
 }
 .testimonios .card-body {
   padding: 30px;

@@ -112,7 +112,7 @@
 
                <!--Marcas-->
                <section>
-                    <div class="container overflow-hidden">
+                    <div class="container-fluid overflow-hidden">
                          <div class="row">
                               <div class="col-12 my-4 px-5">
                                    <div class="carousel">
@@ -262,11 +262,164 @@
                     </div>
                </section>
 
+               <!--Pasos-->
                <section>
                     <div class="container">
                          <div class="row">
-                              <div class="container-acordion">
-                                   <div></div>
+                              <div class="pasos-pc d-flex align-items-start">
+                                   <div
+                                        class="pasos-pc-menu col-md-4 nav flex-column nav-pills me-3"
+                                        id="v-pills-tab"
+                                        role="tablist"
+                                        aria-orientation="vertical"
+                                   >
+                                   <h2 class="pasos-pc-menu-title">¡En 5 pasos, tus clientes pueden reservar su turno!</h2>
+                                        <button
+                                             class="pasos-pc-menu-btn active"
+                                             id="v-pills-home-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#v-pills-home"
+                                             type="button"
+                                             role="tab"
+                                             aria-controls="v-pills-home"
+                                             aria-selected="true"
+                                        >
+                                             <span>Envía tu link</span
+                                             ><img
+                                                  src="/asset/imagenes/icons/down-arrow.webp"
+                                                  alt="arrow"
+                                             />
+                                        </button>
+                                        <button
+                                             class="pasos-pc-menu-btn"
+                                             id="v-pills-profile-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#v-pills-profile"
+                                             type="button"
+                                             role="tab"
+                                             aria-controls="v-pills-profile"
+                                             aria-selected="false"
+                                        >
+                                             <span>El cliente elige tu servicio</span
+                                             ><img
+                                                  src="/asset/imagenes/icons/down-arrow.webp"
+                                                  alt="arrow"
+                                             />
+                                        </button>
+                                        <button
+                                             class="pasos-pc-menu-btn"
+                                             id="v-pills-messages-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#v-pills-messages"
+                                             type="button"
+                                             role="tab"
+                                             aria-controls="v-pills-messages"
+                                             aria-selected="false"
+                                        >
+                                             <span>Elige la fecha</span
+                                             ><img
+                                                  src="/asset/imagenes/icons/down-arrow.webp"
+                                                  alt="arrow"
+                                             />
+                                        </button>
+                                        <button
+                                             class="pasos-pc-menu-btn"
+                                             id="v-pills-settings-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#v-pills-settings"
+                                             type="button"
+                                             role="tab"
+                                             aria-controls="v-pills-settings"
+                                             aria-selected="false"
+                                        >
+                                             <span>Completa los campos</span
+                                             ><img
+                                                  src="/asset/imagenes/icons/down-arrow.webp"
+                                                  alt="arrow"
+                                             />
+                                        </button>
+                                        <button
+                                             class="pasos-pc-menu-btn"
+                                             id="v-pills-settings-tab2"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#v-pills-settings2"
+                                             type="button"
+                                             role="tab"
+                                             aria-controls="v-pills-settings2"
+                                             aria-selected="false"
+                                        >
+                                             <span>Confirma la reserva</span
+                                             ><img
+                                                  src="/asset/imagenes/icons/down-arrow.webp"
+                                                  alt="arrow"
+                                             />
+                                        </button>
+                                   </div>
+                                   <div
+                                        class="pasos-pc-contenido col-md-8 tab-content"
+                                        id="v-pills-tabContent"
+                                   >
+                                        <div
+                                             class="pasos-pc-contenido-item tab-pane fade show active"
+                                             id="v-pills-home"
+                                             role="tabpanel"
+                                             aria-labelledby="v-pills-home-tab"
+                                        >
+                                             <img
+                                                  class="pasos-img"
+                                                  src="/asset/imagenes/enviar_link.webp"
+                                                  alt="Envía tu link"
+                                             />
+                                        </div>
+                                        <div
+                                             class="pasos-pc-contenido-item tab-pane fade"
+                                             id="v-pills-profile"
+                                             role="tabpanel"
+                                             aria-labelledby="v-pills-profile-tab"
+                                        >
+                                             <img
+                                                  class="pasos-img"
+                                                  src="/asset/imagenes/elegir-servicios_Yaguar.webp"
+                                                  alt="El cliente elige tu servicio"
+                                             />
+                                        </div>
+                                        <div
+                                             class="pasos-pc-contenido-item tab-pane fade"
+                                             id="v-pills-messages"
+                                             role="tabpanel"
+                                             aria-labelledby="v-pills-messages-tab"
+                                        >
+                                             <img
+                                                  class="pasos-img"
+                                                  src="/asset/imagenes/elige-fecha_Yaguar.webp"
+                                                  alt="Elige la fecha"
+                                             />
+                                        </div>
+                                        <div
+                                             class="pasos-pc-contenido-item tab-pane fade"
+                                             id="v-pills-settings"
+                                             role="tabpanel"
+                                             aria-labelledby="v-pills-settings-tab"
+                                        >
+                                             <img
+                                                  class="pasos-img"
+                                                  src="/asset/imagenes/completar-campos_Yaguar.webp"
+                                                  alt="Completa los campos"
+                                             />
+                                        </div>
+                                        <div
+                                             class="pasos-pc-contenido-item tab-pane fade"
+                                             id="v-pills-settings2"
+                                             role="tabpanel"
+                                             aria-labelledby="v-pills-settings-tab2"
+                                        >
+                                             <img
+                                                  class="pasos-img"
+                                                  src="/asset/imagenes/confirma-reserva_Yaguar.webp"
+                                                  alt="Confirma la reserva"
+                                             />
+                                        </div>
+                                   </div>
                               </div>
                          </div>
                     </div>
@@ -593,6 +746,6 @@
                crossorigin="anonymous"
           ></script>
 
-          <script defer src="./asset/js/yaguar.js"></script>
+          <script async src="./asset/js/yaguar.js"></script>
      </body>
 </html>
