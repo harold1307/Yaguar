@@ -5,13 +5,13 @@ $(document).ready(function () {
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 1000,
-          speed:3000,
+          speed: 3000,
           centerMode: true,
-          centerPadding: "30px",  
+          centerPadding: "30px",
           arrows: false,
           variableWidth: true,
-          easing:'linear',
-          touchMove:true,
+          easing: "linear",
+          touchMove: true,
           responsive: [
                {
                     breakpoint: 1399,
@@ -84,7 +84,7 @@ $(document).ready(function () {
           autoplay: true,
           autoplaySpeed: 3000,
           centerMode: true,
-          centerPadding: "30px",  
+          centerPadding: "30px",
           arrows: true,
           responsive: [
                {
@@ -127,20 +127,16 @@ $(document).ready(function () {
      });
 });
 
-//Botones
 
-$(function () {
-     $(".btn-6")
-          .on("mouseenter", function (e) {
-               var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-               $(this).find("span").css({ top: relY, left: relX });
-          })
-          .on("mouseout", function (e) {
-               var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-               $(this).find("span").css({ top: relY, left: relX });
+document.querySelectorAll(".pasos-pc-menu-btn").forEach(function (item) {
+     var pmdHAC = new bootstrap.Tab(item);
+     item.addEventListener("mouseover", function () {
+          document.querySelectorAll(".pasos-pc-menu-btn").forEach(function (item2) {
+               item2.classList.remove("active");
           });
+          document.querySelectorAll(".pasos-pc-contenido-item").forEach(function (item3) {
+               item3.classList.remove("active");
+          });
+          pmdHAC.show();
+     });
 });
