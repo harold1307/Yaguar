@@ -45,12 +45,13 @@ li,
   padding: 10px 0;
   min-width: 200px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 991px) {
   .btn_naranja {
     font-size: 20px;
+    width: 100%;
   }
 }
-@media (max-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .btn_naranja {
     font-size: 22px;
   }
@@ -69,12 +70,13 @@ li,
   padding: 10px 0;
   min-width: 200px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 991px) {
   .btn_blanco {
     font-size: 20px;
+    width: 100%;
   }
 }
-@media (max-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .btn_blanco {
     font-size: 22px;
   }
