@@ -255,7 +255,7 @@ header .header-imagen-hidden_movil {
     padding: 25px 0;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 991px) {
   header .header-left {
     display: -webkit-box;
     display: -ms-flexbox;
