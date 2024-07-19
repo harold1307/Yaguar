@@ -762,7 +762,7 @@ header .header-imagen-hidden_movil {
 .container-beneficio-dos .right {
   grid-area: 2/3/3/5;
   z-index: 1;
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 .container-beneficio-dos .right .title {
   font-size: 32px;
@@ -776,6 +776,7 @@ header .header-imagen-hidden_movil {
 @media (min-width: 320px) and (max-width: 991px) {
   .container-beneficio-dos .right {
     grid-area: 1/1/2/5;
+    padding: 0 20px;
   }
   .container-beneficio-dos .right .description {
     width: 100%;
