@@ -127,7 +127,6 @@ $(document).ready(function () {
      });
 });
 
-
 document.querySelectorAll(".pasos-pc-menu-btn").forEach(function (item) {
      var pmdHAC = new bootstrap.Tab(item);
      item.addEventListener("mouseover", function () {
