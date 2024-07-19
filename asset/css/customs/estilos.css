@@ -132,7 +132,12 @@ li,
 header .py-header {
   padding: 100px 0;
 }
-@media (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  header .py-header {
+    padding: 80px 0 0px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   header .py-header {
     padding: 80px 0 40px 0;
   }
@@ -186,18 +191,6 @@ header .header-imagen-hidden_movil {
   header .header-imagen-hidden_pc {
     display: block;
     padding: 25px 0;
-  }
-  header .header .left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -257,6 +250,20 @@ header .header-imagen-hidden_movil {
     padding: 25px 0;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  header .header-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .subtitle {
   line-height: 50px;
@@ -274,7 +281,7 @@ header .header-imagen-hidden_movil {
 }
 
 .slick-slide img {
-  width: 80%;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -326,6 +333,9 @@ header .header-imagen-hidden_movil {
 
 .marcas {
   margin: 70px 0;
+}
+.marcas .carousel-item {
+  margin: 0 20px;
 }
 
 .container-beneficio-uno {

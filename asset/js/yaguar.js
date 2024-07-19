@@ -7,11 +7,14 @@ $(document).ready(function () {
           autoplaySpeed: 1000,
           speed:3000,
           centerMode: true,
-          centerPadding: "20px",  
+          centerPadding: "30px",  
           arrows: false,
+          variableWidth: true,
+          easing:'linear',
+          touchMove:true,
           responsive: [
                {
-                    breakpoint: 1200,
+                    breakpoint: 1399,
                     settings: {
                          arrows: false,
                          centerMode: true,
@@ -20,12 +23,23 @@ $(document).ready(function () {
                     },
                },
                {
+                    breakpoint: 1200,
+                    settings: {
+                         arrows: false,
+                         centerMode: true,
+                         centerPadding: "30px",
+                         slidesToShow: 6,
+                         variableWidth: false,
+                    },
+               },
+               {
                     breakpoint: 992,
                     settings: {
                          arrows: false,
                          centerMode: true,
                          centerPadding: "20px",
-                         slidesToShow: 4,
+                         slidesToShow: 5,
+                         variableWidth: false,
                     },
                },
                {
@@ -35,6 +49,7 @@ $(document).ready(function () {
                          centerMode: true,
                          centerPadding: "10px",
                          slidesToShow: 3,
+                         variableWidth: false,
                     },
                },
                {
@@ -44,6 +59,17 @@ $(document).ready(function () {
                          centerMode: true,
                          centerPadding: "10px",
                          slidesToShow: 2,
+                         variableWidth: false,
+                    },
+               },
+               {
+                    breakpoint: 320,
+                    settings: {
+                         arrows: false,
+                         centerMode: true,
+                         centerPadding: "10px",
+                         slidesToShow: 2,
+                         variableWidth: false,
                     },
                },
           ],
