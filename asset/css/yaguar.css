@@ -13632,7 +13632,7 @@ li,
     visibility: hidden;
   }
   .menu-top-collapse .navbar-nav {
-    height: calc(90vh - 140px);
+    height: 90vh;
     width: 100%;
   }
   .menu-top-collapse .navbar-nav .nav-item {
