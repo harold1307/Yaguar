@@ -127,6 +127,16 @@ $(document).ready(function () {
      });
 });
 
+document.querySelector(".navbar-toggler").addEventListener("click", function () {
+     let menuToggler = document.querySelector(".navbar-toggler").classList.contains("collapsed");
+     if (menuToggler) {
+          document.querySelector(".menu-top").classList.remove("open");
+     } else {
+          console.log(document.querySelector(".navbar-toggler").classList.contains("collapsed"));
+          document.querySelector(".menu-top").classList.add("open");
+     }
+});
+
 document.querySelectorAll(".pasos-pc-menu-btn").forEach(function (item) {
      var pmdHAC = new bootstrap.Tab(item);
      item.addEventListener("mouseover", function () {
