@@ -14361,6 +14361,15 @@ header .header-imagen-hidden_movil {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
+.pasos-pc-menu .pasos-pc-menu-text-0, .pasos-pc-menu .pasos-pc-menu-text-1, .pasos-pc-menu .pasos-pc-menu-text-2, .pasos-pc-menu .pasos-pc-menu-text-3, .pasos-pc-menu .pasos-pc-menu-text-4 {
+  display: none;
+}
+.pasos-pc-menu .pasos-pc-menu-text-0 .active, .pasos-pc-menu .pasos-pc-menu-text-1 .active, .pasos-pc-menu .pasos-pc-menu-text-2 .active, .pasos-pc-menu .pasos-pc-menu-text-3 .active, .pasos-pc-menu .pasos-pc-menu-text-4 .active {
+  display: block;
+}
+.pasos-pc-menu .pasos-pc-menu-text-0.active, .pasos-pc-menu .pasos-pc-menu-text-1.active, .pasos-pc-menu .pasos-pc-menu-text-2.active, .pasos-pc-menu .pasos-pc-menu-text-3.active, .pasos-pc-menu .pasos-pc-menu-text-4.active {
+  display: block !important;
+}
 .pasos-pc-contenido {
   display: -webkit-box;
   display: -ms-flexbox;

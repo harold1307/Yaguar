@@ -149,3 +149,17 @@ document.querySelectorAll(".pasos-pc-menu-btn").forEach(function (item) {
           pmdHAC.show();
      });
 });
+
+// document.querySelectorAll(".pasos-pc-menu-btn").forEach(function (item) {
+//      item.addEventListener("mouseover", function () {
+//           document.querySelectorAll(".pasos-pc-menu-text").forEach(function (item2) {
+//                item2.classList.remove("active");
+//           });
+//      });
+// });
+
+document.querySelectorAll(".pasos-pc-menu-btn").forEach(function (item, i) {
+     item.addEventListener("mouseover", function () {
+          document.querySelector(`.pasos-pc-menu-text-${i}`).classList.add("active");
+     });
+});
